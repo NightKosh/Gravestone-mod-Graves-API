@@ -9,4 +9,6 @@ package gravestone.api;
 public class GraveStoneAPI {
 
     public static IGraveStone graveStone;
+
+    public static IGraveGeneration graveGenerationAtDeath;
 }
