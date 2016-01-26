@@ -1,4 +1,4 @@
-package gravestone.api.grave_items;
+package nightkosh.gravestone.api.grave_items;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;

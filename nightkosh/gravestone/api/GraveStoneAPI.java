@@ -1,4 +1,4 @@
-package gravestone.api;
+package nightkosh.gravestone.api;
 
 /**
  * GraveStone mod

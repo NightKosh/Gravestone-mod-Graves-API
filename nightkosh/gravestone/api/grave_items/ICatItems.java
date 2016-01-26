@@ -1,7 +1,10 @@
-package gravestone.api.death_handler;
+package nightkosh.gravestone.api.grave_items;
 
 import net.minecraft.entity.passive.EntityOcelot;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
+
+import java.util.List;
 
 /**
  * GraveStone mod
@@ -9,7 +12,8 @@ import net.minecraft.util.DamageSource;
  * @author NightKosh
  * @license Lesser GNU Public License v3 (http://www.gnu.org/licenses/lgpl.html)
  */
-public interface ICatDeathHandler {
+public interface ICatItems {
 
-    public boolean cancelGraveGeneration(EntityOcelot cat, DamageSource source);
+    public List<ItemStack> addItems(EntityOcelot cat, DamageSource source);
+
 }

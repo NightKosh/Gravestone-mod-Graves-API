@@ -1,4 +1,4 @@
-package gravestone.api.death_handler;
+package nightkosh.gravestone.api.death_handler;
 
 import net.minecraft.entity.passive.EntityHorse;
 import net.minecraft.util.DamageSource;

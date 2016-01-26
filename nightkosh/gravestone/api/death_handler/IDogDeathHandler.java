@@ -1,10 +1,7 @@
-package gravestone.api.grave_items;
+package nightkosh.gravestone.api.death_handler;
 
 import net.minecraft.entity.passive.EntityWolf;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
-
-import java.util.List;
 
 /**
  * GraveStone mod
@@ -12,7 +9,7 @@ import java.util.List;
  * @author NightKosh
  * @license Lesser GNU Public License v3 (http://www.gnu.org/licenses/lgpl.html)
  */
-public interface IDogItems {
+public interface IDogDeathHandler {
 
-    public List<ItemStack> addItems(EntityWolf dog, DamageSource source);
+    public boolean cancelGraveGeneration(EntityWolf dog, DamageSource source);
 }

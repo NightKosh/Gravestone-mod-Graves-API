@@ -1,7 +1,7 @@
-package gravestone.api;
+package nightkosh.gravestone.api;
 
-import gravestone.api.death_handler.*;
-import gravestone.api.grave_items.*;
+import nightkosh.gravestone.api.death_handler.*;
+import nightkosh.gravestone.api.grave_items.*;
 
 /**
  * GraveStone mod
