@@ -11,5 +11,5 @@ import net.minecraft.util.DamageSource;
  */
 public interface IDogDeathHandler {
 
-    public boolean beforeDogDeath(EntityWolf dog, DamageSource source);
+    public boolean cancelGraveGeneration(EntityWolf dog, DamageSource source);
 }

@@ -14,5 +14,5 @@ import java.util.List;
  */
 public interface IDogItems {
 
-    public List<ItemStack> addItemsToDogGrave(EntityWolf dog, DamageSource source);
+    public List<ItemStack> addItems(EntityWolf dog, DamageSource source);
 }

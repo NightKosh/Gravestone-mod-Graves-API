@@ -14,6 +14,6 @@ import java.util.List;
  */
 public interface ICatItems {
 
-    public List<ItemStack> addItemsToCatGrave(EntityOcelot cat, DamageSource source);
+    public List<ItemStack> addItems(EntityOcelot cat, DamageSource source);
 
 }

@@ -11,5 +11,5 @@ import net.minecraft.util.DamageSource;
  */
 public interface IHorseDeathHandler {
 
-    public boolean beforeHorseDeath(EntityHorse horse, DamageSource source);
+    public boolean cancelGraveGeneration(EntityHorse horse, DamageSource source);
 }

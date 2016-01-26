@@ -11,5 +11,5 @@ import net.minecraft.util.DamageSource;
  */
 public interface ICatDeathHandler {
 
-    public boolean beforeCatDeath(EntityOcelot cat, DamageSource source);
+    public boolean cancelGraveGeneration(EntityOcelot cat, DamageSource source);
 }

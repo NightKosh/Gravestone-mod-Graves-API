@@ -11,5 +11,5 @@ import net.minecraft.util.DamageSource;
  */
 public interface IVillagerDeathHandler {
 
-    public boolean beforeVillagerDeath(EntityVillager villager, DamageSource source);
+    public boolean cancelGraveGeneration(EntityVillager villager, DamageSource source);
 }

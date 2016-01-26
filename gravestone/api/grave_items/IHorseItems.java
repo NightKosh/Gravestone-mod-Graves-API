@@ -14,6 +14,6 @@ import java.util.List;
  */
 public interface IHorseItems {
 
-    public List<ItemStack> addItemsToHorseGrave(EntityHorse horse, DamageSource source);
+    public List<ItemStack> addItems(EntityHorse horse, DamageSource source);
 
 }

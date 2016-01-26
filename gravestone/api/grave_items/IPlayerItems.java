@@ -14,5 +14,13 @@ import java.util.List;
  */
 public interface IPlayerItems {
 
-    public List<ItemStack> addItemsToPlayerGrave(EntityPlayer player, DamageSource source);
+    public List<ItemStack> addItems(EntityPlayer player, DamageSource source);
+
+    /**
+     * Calls after all items were collected. Use it only if you need to remove/change some of them.
+     * @param items Items to place in grave
+     */
+    public default void getItems(EntityPlayer player, DamageSource source, List<ItemStack> items) {
+
+    }
 }

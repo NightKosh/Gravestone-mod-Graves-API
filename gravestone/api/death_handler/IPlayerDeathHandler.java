@@ -11,5 +11,5 @@ import net.minecraft.util.DamageSource;
  */
 public interface IPlayerDeathHandler {
 
-    public boolean beforePlayerDeath(EntityPlayer player, DamageSource source);
+    public boolean cancelGraveGeneration(EntityPlayer player, DamageSource source);
 }

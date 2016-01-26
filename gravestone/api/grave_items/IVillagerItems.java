@@ -14,6 +14,6 @@ import java.util.List;
  */
 public interface IVillagerItems {
 
-    public List<ItemStack> addItemsToVillagerGrave(EntityVillager villager, DamageSource source);
+    public List<ItemStack> addItems(EntityVillager villager, DamageSource source);
 
 }
