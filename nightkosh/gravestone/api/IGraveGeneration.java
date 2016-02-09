@@ -32,7 +32,8 @@ public interface IGraveGeneration {
 
     public void addHorseItemsHandler(IHorseItems horseItems);
 
-
-
+    /**
+     * It can be used to generate graves for your Entities
+     */
     public void addCustomEntityDeathHandler(ICustomEntityDeathHandler customEntityDeathHandler);
 }

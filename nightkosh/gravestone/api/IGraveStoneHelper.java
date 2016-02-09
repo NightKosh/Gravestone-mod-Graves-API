@@ -11,9 +11,12 @@ import nightkosh.gravestone.api.grave.EnumGraveMaterial;
  */
 public interface IGraveStoneHelper {
 
+    /**
+     * Allow graves to use any your sword as a gravestone
+     */
     public void addSwordToSwordsList(Item sword);
 
-    public EnumGraveMaterial getPlayerGraveMaterialByLevel(int level);
+    public EnumGraveMaterial getGraveMaterialByLevel(int level);
 
     public EnumGraveMaterial getGraveMaterialByAge(int age);
 }

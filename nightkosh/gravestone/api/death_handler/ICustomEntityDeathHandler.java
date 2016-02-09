@@ -16,20 +16,34 @@ import java.util.List;
  */
 public interface ICustomEntityDeathHandler {
 
+    /**
+     * Your entity class
+     */
     public Class getEntityClass();
 
-    public boolean generateGrave(Entity entity, DamageSource damageSource);
+    public boolean canGenerateGrave(Entity entity, DamageSource damageSource);
 
-    public EnumGraveType getGraveType();
+    public EnumGraveType getGraveType(Entity entity, DamageSource damageSource);
 
-    public EnumGraveMaterial getGraveMaterial();
+    public EnumGraveMaterial getGraveMaterial(Entity entity, DamageSource damageSource);
 
+    /**
+     * Items to be placed in grave
+     */
     public List<ItemStack> getItems();
 
+    /**
+     * Sword which will be used as a gravestone
+     * do not forget to remove it from items list
+     */
     public default ItemStack getSword() {
         return null;
     }
 
+    /**
+     * Amount of lived days
+     * you can calculate it as "(int) (entity.worldObj.getWorldTime() - spawnTime) / 24000"
+     */
     public default int getAge() {
         return 0;
     }
