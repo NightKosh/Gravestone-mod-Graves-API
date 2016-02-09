@@ -31,4 +31,8 @@ public interface IGraveGeneration {
     public void addCatItemsHandler(ICatItems catItems);
 
     public void addHorseItemsHandler(IHorseItems horseItems);
+
+
+
+    public void addCustomEntityDeathHandler(ICustomEntityDeathHandler customEntityDeathHandler);
 }

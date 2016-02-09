@@ -10,7 +10,7 @@ import net.minecraft.creativetab.CreativeTabs;
  */
 public class GraveStoneAPI {
 
-    public static IGraveStone graveStone;
+    public static IGraveStoneHelper graveStone;
 
     public static IGraveGeneration graveGenerationAtDeath;
 
