@@ -1,5 +1,7 @@
 package nightkosh.gravestone.api;
 
+import net.minecraft.creativetab.CreativeTabs;
+
 /**
  * GraveStone mod
  *
@@ -11,4 +13,6 @@ public class GraveStoneAPI {
     public static IGraveStone graveStone;
 
     public static IGraveGeneration graveGenerationAtDeath;
+
+    public static CreativeTabs gravesTab;
 }
