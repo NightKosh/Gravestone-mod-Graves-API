@@ -13,4 +13,3 @@ public class ModInfo {
     public static final String VERSION = "3.0.0";
     public static final String API_VERSION = "1.0.0";
 }
-}
