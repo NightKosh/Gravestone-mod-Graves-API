@@ -10,11 +10,14 @@ public enum EnumGraveType implements IEnumGraveType {
     VERTICAL_PLATE,
     CROSS,
     OBELISK,
+    CELTIC_CROSS,
     HORIZONTAL_PLATE,
     VILLAGER_STATUE,
     DOG_STATUE,
     CAT_STATUE,
     HORSE_STATUE,
     CREEPER_STATUE,
+    STARVED_CORPSE,
+    WITHERED_CORPSE,
     SWORD
 }
