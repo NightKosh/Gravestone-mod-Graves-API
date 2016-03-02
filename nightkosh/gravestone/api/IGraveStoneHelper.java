@@ -1,7 +1,11 @@
 package nightkosh.gravestone.api;
 
 import net.minecraft.item.Item;
+import net.minecraft.util.BlockPos;
+import net.minecraft.util.DamageSource;
+import net.minecraft.world.World;
 import nightkosh.gravestone.api.grave.EnumGraveMaterial;
+import nightkosh.gravestone.api.grave.EnumGraveType;
 
 /**
  * GraveStone mod
@@ -19,4 +23,8 @@ public interface IGraveStoneHelper {
     public EnumGraveMaterial getGraveMaterialByLevel(int level);
 
     public EnumGraveMaterial getGraveMaterialByAge(int age);
+
+    public boolean isMagicDamage(DamageSource damageSource);
+
+    public boolean isMossyGrave(World world, BlockPos pos, EnumGraveMaterial graveMaterial, EnumGraveType graveType);
 }
