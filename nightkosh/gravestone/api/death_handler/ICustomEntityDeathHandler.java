@@ -38,7 +38,7 @@ public interface ICustomEntityDeathHandler {
 
     public default boolean isMossy(Entity entity, DamageSource damageSource) {
         if (GraveStoneAPI.graveStone != null) {
-            return GraveStoneAPI.graveStone.isMossyGrave(entity.worldObj, entity.getPosition(),
+            return GraveStoneAPI.graveStone.isMossyGrave(entity.getEntityWorld(), entity.getPosition(),
                     getGraveMaterial(entity, damageSource), getGraveType(entity, damageSource));
         } else {
             return false;
