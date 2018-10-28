@@ -2,6 +2,7 @@ package nightkosh.gravestone.api;
 
 import nightkosh.gravestone.api.death_handler.*;
 import nightkosh.gravestone.api.grave_items.*;
+import nightkosh.gravestone.api.grave_position.IGravePositionHandler;
 
 /**
  * GraveStone mod
@@ -36,4 +37,9 @@ public interface IGraveGeneration {
      * It can be used to generate graves for your Entities
      */
     public void addCustomEntityDeathHandler(ICustomEntityDeathHandler customEntityDeathHandler);
+
+    /**
+     * It can be used to change position of generated grave
+     */
+    public void addGravePositionHandler(IGravePositionHandler gravePosition);
 }
