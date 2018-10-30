@@ -2,6 +2,7 @@ package nightkosh.gravestone.api.grave_position;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -26,6 +27,23 @@ public interface IGravePositionHandler {
 
     /**
      * New position of the grave
+     *
+     * @param world World
+     * @param entity Dead mob. It can be player, villager, dog, cat horse, or even any other modded mob
+     * @param pos Position of death
+     * @param damageSource source of damage which killed this mod
+     * @return position in which grave will be generated
      */
-    public BlockPos gravePosition();
+    public BlockPos gravePosition(World world, Entity entity, BlockPos pos, DamageSource damageSource);
+
+    /**
+     * New facing of the grave
+     *
+     * @param world World
+     * @param entity Dead mob. It can be player, villager, dog, cat horse, or even any other modded mob
+     * @param pos Position of death
+     * @param damageSource source of damage which killed this mod
+     * @return direction in which grave will be rotated
+     */
+    public EnumFacing graveFacing(World world, Entity entity, BlockPos pos, DamageSource damageSource);
 }
