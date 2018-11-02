@@ -2,6 +2,8 @@ package nightkosh.gravestone.api;
 
 import net.minecraft.creativetab.CreativeTabs;
 
+import javax.annotation.Nullable;
+
 /**
  * GraveStone mod
  *
@@ -10,9 +12,12 @@ import net.minecraft.creativetab.CreativeTabs;
  */
 public class GraveStoneAPI {
 
+    @Nullable
     public static IGraveStoneHelper graveStone;
 
+    @Nullable
     public static IGraveGeneration graveGenerationAtDeath;
 
+    @Nullable
     public static CreativeTabs gravesTab;
 }
