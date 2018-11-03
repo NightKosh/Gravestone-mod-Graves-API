@@ -51,4 +51,18 @@ public interface IGravePositionHandler {
      */
     @Nonnull
     public EnumFacing graveFacing(World world, Entity entity, BlockPos pos, DamageSource damageSource);
+
+    /**
+     * Provide custom world in case you'd like to create grave in custom dimension
+     *
+     * @param world        World
+     * @param entity       Dead mob. It can be player, villager, dog, cat horse, or even any other modded mob
+     * @param pos          Position of death
+     * @param damageSource source of damage which killed this mod
+     * @return World instance
+     */
+    @Nonnull
+    public default World getWorld(World world, Entity entity, BlockPos pos, DamageSource damageSource) {
+        return world;
+    }
 }
