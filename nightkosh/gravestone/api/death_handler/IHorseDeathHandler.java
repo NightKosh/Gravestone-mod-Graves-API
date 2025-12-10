@@ -1,7 +1,8 @@
 package nightkosh.gravestone.api.death_handler;
 
-import net.minecraft.entity.passive.AbstractHorse;
-import net.minecraft.util.DamageSource;
+
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.animal.horse.AbstractHorse;
 
 /**
  * GraveStone mod
@@ -11,5 +12,6 @@ import net.minecraft.util.DamageSource;
  */
 public interface IHorseDeathHandler {
 
-    public boolean cancelGraveGeneration(AbstractHorse horse, DamageSource source);
+    boolean cancelGraveGeneration(AbstractHorse horse, DamageSource source);
+
 }

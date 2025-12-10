@@ -1,9 +1,9 @@
 package nightkosh.gravestone.api;
 
-import net.minecraft.item.Item;
-import net.minecraft.util.DamageSource;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.Level;
 import nightkosh.gravestone.api.grave.EnumGraveMaterial;
 import nightkosh.gravestone.api.grave.EnumGraveType;
 
@@ -18,13 +18,14 @@ public interface IGraveStoneHelper {
     /**
      * Allow graves to use any your sword as a gravestone
      */
-    public void addSwordToSwordsList(Item sword);
+    void addSwordToSwordsList(Item sword);
 
-    public EnumGraveMaterial getGraveMaterialByLevel(int level);
+    EnumGraveMaterial getGraveMaterialByLevel(int level);
 
-    public EnumGraveMaterial getGraveMaterialByAge(int age);
+    EnumGraveMaterial getGraveMaterialByAge(int age);
 
-    public boolean isMagicDamage(DamageSource damageSource);
+    boolean isMagicDamage(DamageSource damageSource);
 
-    public boolean isMossyGrave(World world, BlockPos pos, EnumGraveMaterial graveMaterial, EnumGraveType graveType);
+    boolean isMossyGrave(Level level, BlockPos pos, EnumGraveMaterial graveMaterial, EnumGraveType graveType);
+
 }

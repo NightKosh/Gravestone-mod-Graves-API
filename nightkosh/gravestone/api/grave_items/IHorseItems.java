@@ -1,8 +1,8 @@
 package nightkosh.gravestone.api.grave_items;
 
-import net.minecraft.entity.passive.AbstractHorse;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.DamageSource;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.animal.horse.AbstractHorse;
+import net.minecraft.world.item.ItemStack;
 
 import java.util.List;
 
@@ -14,6 +14,6 @@ import java.util.List;
  */
 public interface IHorseItems {
 
-    public List<ItemStack> addItems(AbstractHorse horse, DamageSource source);
+    List<ItemStack> addItems(AbstractHorse horse, DamageSource source);
 
 }

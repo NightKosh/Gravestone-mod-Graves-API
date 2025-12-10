@@ -1,7 +1,7 @@
 package nightkosh.gravestone.api.death_handler;
 
-import net.minecraft.entity.passive.EntityWolf;
-import net.minecraft.util.DamageSource;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.animal.Wolf;
 
 /**
  * GraveStone mod
@@ -11,5 +11,5 @@ import net.minecraft.util.DamageSource;
  */
 public interface IDogDeathHandler {
 
-    public boolean cancelGraveGeneration(EntityWolf dog, DamageSource source);
+    public boolean cancelGraveGeneration(Wolf dog, DamageSource source);
 }

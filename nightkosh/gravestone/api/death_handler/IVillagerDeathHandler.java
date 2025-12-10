@@ -1,7 +1,7 @@
 package nightkosh.gravestone.api.death_handler;
 
-import net.minecraft.entity.passive.EntityVillager;
-import net.minecraft.util.DamageSource;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.npc.Villager;
 
 /**
  * GraveStone mod
@@ -11,5 +11,6 @@ import net.minecraft.util.DamageSource;
  */
 public interface IVillagerDeathHandler {
 
-    public boolean cancelGraveGeneration(EntityVillager villager, DamageSource source);
+    boolean cancelGraveGeneration(Villager villager, DamageSource source);
+
 }

@@ -1,7 +1,7 @@
 package nightkosh.gravestone.api.grave;
 
-import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 
 /**
  * GraveStone mod
@@ -10,13 +10,15 @@ import net.minecraft.init.Blocks;
  * @license Lesser GNU Public License v3 (http://www.gnu.org/licenses/lgpl.html)
  */
 public enum EnumGraveMaterial implements IEnumGraveMaterial {
-    WOOD(Blocks.PLANKS),
+    //TODO
+//    WOOD(Blocks.PLANKS),
     SANDSTONE(Blocks.SANDSTONE),
     RED_SANDSTONE(Blocks.RED_SANDSTONE),
     STONE(Blocks.STONE),
-    DIORITE(Blocks.STONE, DIORITE_META),
-    ANDESITE(Blocks.STONE, ANDESITE_META),
-    GRANITE(Blocks.STONE, GRANITE_META),
+    //TODO
+//    DIORITE(Blocks.STONE, DIORITE_META),
+//    ANDESITE(Blocks.STONE, ANDESITE_META),
+//    GRANITE(Blocks.STONE, GRANITE_META),
     IRON(Blocks.IRON_BLOCK),
     GOLD(Blocks.GOLD_BLOCK),
     DIAMOND(Blocks.DIAMOND_BLOCK),
@@ -29,14 +31,14 @@ public enum EnumGraveMaterial implements IEnumGraveMaterial {
     ICE(Blocks.ICE),
     OTHER(null);
 
-    private Block block;
-    private int meta;
+    private final Block block;
+    private final int meta;
 
-    private EnumGraveMaterial(Block block) {
+    EnumGraveMaterial(Block block) {
         this(block, 0);
     }
 
-    private EnumGraveMaterial(Block block, int meta) {
+    EnumGraveMaterial(Block block, int meta) {
         this.block = block;
         this.meta = meta;
     }
@@ -48,4 +50,5 @@ public enum EnumGraveMaterial implements IEnumGraveMaterial {
     public int getMeta() {
         return this.meta;
     }
+
 }

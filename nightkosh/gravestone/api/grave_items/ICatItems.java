@@ -1,8 +1,9 @@
 package nightkosh.gravestone.api.grave_items;
 
-import net.minecraft.entity.passive.EntityOcelot;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.DamageSource;
+
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.animal.Cat;
+import net.minecraft.world.item.ItemStack;
 
 import java.util.List;
 
@@ -14,6 +15,6 @@ import java.util.List;
  */
 public interface ICatItems {
 
-    public List<ItemStack> addItems(EntityOcelot cat, DamageSource source);
+    List<ItemStack> addItems(Cat cat, DamageSource source);
 
 }

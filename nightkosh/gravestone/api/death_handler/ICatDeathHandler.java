@@ -1,7 +1,8 @@
 package nightkosh.gravestone.api.death_handler;
 
-import net.minecraft.entity.passive.EntityOcelot;
-import net.minecraft.util.DamageSource;
+
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.animal.Cat;
 
 /**
  * GraveStone mod
@@ -11,5 +12,6 @@ import net.minecraft.util.DamageSource;
  */
 public interface ICatDeathHandler {
 
-    public boolean cancelGraveGeneration(EntityOcelot cat, DamageSource source);
+    boolean cancelGraveGeneration(Cat cat, DamageSource source);
+
 }
