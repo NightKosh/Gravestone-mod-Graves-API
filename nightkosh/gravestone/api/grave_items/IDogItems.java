@@ -1,8 +1,8 @@
 package nightkosh.gravestone.api.grave_items;
 
-import net.minecraft.entity.passive.EntityWolf;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.DamageSource;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.animal.Wolf;
+import net.minecraft.world.item.ItemStack;
 
 import java.util.List;
 
@@ -14,5 +14,6 @@ import java.util.List;
  */
 public interface IDogItems {
 
-    public List<ItemStack> addItems(EntityWolf dog, DamageSource source);
+    List<ItemStack> addItems(Wolf dog, DamageSource source);
+
 }

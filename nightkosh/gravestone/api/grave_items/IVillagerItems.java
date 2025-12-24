@@ -1,8 +1,8 @@
 package nightkosh.gravestone.api.grave_items;
 
-import net.minecraft.entity.passive.EntityVillager;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.DamageSource;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.npc.Villager;
+import net.minecraft.world.item.ItemStack;
 
 import java.util.List;
 
@@ -14,6 +14,6 @@ import java.util.List;
  */
 public interface IVillagerItems {
 
-    public List<ItemStack> addItems(EntityVillager villager, DamageSource source);
+    public List<ItemStack> addItems(Villager villager, DamageSource source);
 
 }

@@ -1,8 +1,8 @@
 package nightkosh.gravestone.api.grave_items;
 
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.DamageSource;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 
 import java.util.List;
 
@@ -14,13 +14,15 @@ import java.util.List;
  */
 public interface IPlayerItems {
 
-    public List<ItemStack> addItems(EntityPlayer player, DamageSource source);
+    List<ItemStack> addItems(Player player, DamageSource source);
 
     /**
      * Calls after all items were collected. Use it only if you need to remove/change some of them.
+     *
      * @param items Items to place in grave
      */
-    public default void getItems(EntityPlayer player, DamageSource source, List<ItemStack> items) {
+    default void getItems(Player player, DamageSource source, List<ItemStack> items) {
 
     }
+
 }

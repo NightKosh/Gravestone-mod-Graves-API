@@ -1,7 +1,7 @@
 package nightkosh.gravestone.api.death_handler;
 
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.util.DamageSource;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.player.Player;
 
 /**
  * GraveStone mod
@@ -11,5 +11,6 @@ import net.minecraft.util.DamageSource;
  */
 public interface IPlayerDeathHandler {
 
-    public boolean cancelGraveGeneration(EntityPlayer player, DamageSource source);
+    boolean cancelGraveGeneration(Player player, DamageSource source);
+
 }

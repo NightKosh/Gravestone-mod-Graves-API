@@ -1,13 +1,13 @@
 package nightkosh.gravestone.api.grave_position;
 
-import net.minecraft.entity.Entity;
-import net.minecraft.util.DamageSource;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.level.Level;
 
-import javax.annotation.Nullable;
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 /**
  * GraveStone mod
@@ -20,49 +20,50 @@ public interface IGravePositionHandler {
     /**
      * A condition to use custom grave position
      *
-     * @param world        World
+     * @param level        Level
      * @param entity       Dead mob. It can be player, villager, dog, cat horse, or even any other modded mob
      * @param pos          Position of death
      * @param damageSource source of damage which killed this mod
      * @return should position of generated grave be changed or not
      */
-    public boolean condition(World world, Entity entity, BlockPos pos, DamageSource damageSource);
+    boolean condition(Level level, Entity entity, BlockPos pos, DamageSource damageSource);
 
     /**
      * New position of the grave
      *
-     * @param world        World
+     * @param level        Level
      * @param entity       Dead mob. It can be player, villager, dog, cat horse, or even any other modded mob
      * @param pos          Position of death
      * @param damageSource source of damage which killed this mod
      * @return position in which grave will be generated
      */
     @Nullable
-    public BlockPos gravePosition(World world, Entity entity, BlockPos pos, DamageSource damageSource);
+    BlockPos gravePosition(Level level, Entity entity, BlockPos pos, DamageSource damageSource);
 
     /**
      * New facing of the grave
      *
-     * @param world        World
+     * @param level        Level
      * @param entity       Dead mob. It can be player, villager, dog, cat horse, or even any other modded mob
      * @param pos          Position of death
      * @param damageSource source of damage which killed this mod
      * @return direction in which grave will be rotated
      */
     @Nonnull
-    public EnumFacing graveFacing(World world, Entity entity, BlockPos pos, DamageSource damageSource);
+    Direction graveFacing(Level level, Entity entity, BlockPos pos, DamageSource damageSource);
 
     /**
-     * Provide custom world in case you'd like to create grave in custom dimension
+     * Provide custom level in case you'd like to create grave in custom dimension
      *
-     * @param world        World
+     * @param level        Level
      * @param entity       Dead mob. It can be player, villager, dog, cat horse, or even any other modded mob
      * @param pos          Position of death
      * @param damageSource source of damage which killed this mod
      * @return World instance
      */
     @Nonnull
-    public default World getWorld(World world, Entity entity, BlockPos pos, DamageSource damageSource) {
-        return world;
+    default Level getLevel(Level level, Entity entity, BlockPos pos, DamageSource damageSource) {
+        return level;
     }
+
 }
