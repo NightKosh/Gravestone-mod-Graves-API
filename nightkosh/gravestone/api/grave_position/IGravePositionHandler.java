@@ -1,6 +1,7 @@
 package nightkosh.gravestone.api.grave_position;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.Level;
@@ -48,9 +49,8 @@ public interface IGravePositionHandler {
      * @param damageSource source of damage which killed this mod
      * @return direction in which grave will be rotated
      */
-    //TODO
-//    @Nonnull
-//    EnumFacing graveFacing(Level level, Entity entity, BlockPos pos, DamageSource damageSource);
+    @Nonnull
+    Direction graveFacing(Level level, Entity entity, BlockPos pos, DamageSource damageSource);
 
     /**
      * Provide custom level in case you'd like to create grave in custom dimension

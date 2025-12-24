@@ -3,7 +3,6 @@ package nightkosh.gravestone.api.death_handler;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
-import nightkosh.gravestone.api.GraveStoneAPI;
 import nightkosh.gravestone.api.grave.EnumGraveMaterial;
 import nightkosh.gravestone.api.grave.EnumGraveType;
 
@@ -27,23 +26,6 @@ public interface ICustomEntityDeathHandler {
     EnumGraveType getGraveType(Entity entity, DamageSource damageSource);
 
     EnumGraveMaterial getGraveMaterial(Entity entity, DamageSource damageSource);
-
-    default boolean isEnchanted(Entity entity, DamageSource damageSource) {
-        if (GraveStoneAPI.graveStone != null) {
-            return GraveStoneAPI.graveStone.isMagicDamage(damageSource);
-        } else {
-            return false;
-        }
-    }
-
-    default boolean isMossy(Entity entity, DamageSource damageSource) {
-        if (GraveStoneAPI.graveStone != null) {
-            return false;//TODO GraveStoneAPI.graveStone.isMossyGrave(entity.getEntityWorld(), entity.getPosition(),
-//                    getGraveMaterial(entity, damageSource), getGraveType(entity, damageSource));
-        } else {
-            return false;
-        }
-    }
 
     /**
      * Items to be placed in grave

@@ -8,6 +8,8 @@ package nightkosh.gravestone.api;
  */
 public class ModInfo {
 
+    //API is under construction do not try to use it without discussion please
+
     public static final String ID = "gravestone";
     public static final String API_VERSION = "1.2.0";
 
