@@ -1,7 +1,12 @@
 package nightkosh.gravestone.api.grave;
 
+import com.mojang.serialization.Codec;
+import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+
+import javax.annotation.Nonnull;
+import java.util.Locale;
 
 /**
  * GraveStone mod
@@ -9,7 +14,7 @@ import net.minecraft.world.level.block.Blocks;
  * @author NightKosh
  * @license Lesser GNU Public License v3 (http://www.gnu.org/licenses/lgpl.html)
  */
-public enum EnumGraveMaterial {
+public enum EnumGraveMaterial implements StringRepresentable {
 
     SANDSTONE(Blocks.SANDSTONE),
     STONE(Blocks.STONE),
@@ -23,6 +28,8 @@ public enum EnumGraveMaterial {
     PRIZMARINE(Blocks.PRISMARINE),
     ICE(Blocks.ICE);
 
+    public static final Codec<EnumGraveMaterial> CODEC = StringRepresentable.fromEnum(EnumGraveMaterial::values);
+
     private final Block block;
 
     EnumGraveMaterial(Block block) {
@@ -31,6 +38,12 @@ public enum EnumGraveMaterial {
 
     public Block getBlock() {
         return this.block;
+    }
+
+    @Nonnull
+    @Override
+    public String getSerializedName() {
+        return name().toLowerCase(Locale.ROOT);
     }
 
 }
