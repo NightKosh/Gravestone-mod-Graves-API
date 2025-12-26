@@ -1,7 +1,7 @@
 package nightkosh.gravestone.api.grave_items;
 
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.npc.Villager;
+import net.minecraft.world.entity.npc.villager.Villager;
 import net.minecraft.world.item.ItemStack;
 
 import java.util.List;

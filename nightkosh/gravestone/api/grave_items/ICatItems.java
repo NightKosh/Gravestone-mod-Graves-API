@@ -2,7 +2,7 @@ package nightkosh.gravestone.api.grave_items;
 
 
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.animal.Cat;
+import net.minecraft.world.entity.animal.feline.Cat;
 import net.minecraft.world.item.ItemStack;
 
 import java.util.List;

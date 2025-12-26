@@ -1,7 +1,7 @@
 package nightkosh.gravestone.api.death_handler;
 
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.npc.Villager;
+import net.minecraft.world.entity.npc.villager.Villager;
 
 /**
  * GraveStone mod

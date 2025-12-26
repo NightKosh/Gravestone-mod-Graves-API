@@ -2,7 +2,7 @@ package nightkosh.gravestone.api.death_handler;
 
 
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.animal.horse.AbstractHorse;
+import net.minecraft.world.entity.animal.equine.AbstractHorse;
 
 /**
  * GraveStone mod

@@ -1,7 +1,7 @@
 package nightkosh.gravestone.api.death_handler;
 
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.animal.Wolf;
+import net.minecraft.world.entity.animal.wolf.Wolf;
 
 /**
  * GraveStone mod
