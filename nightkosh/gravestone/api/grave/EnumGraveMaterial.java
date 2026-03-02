@@ -25,8 +25,8 @@ public enum EnumGraveMaterial implements StringRepresentable {
     DIAMOND(Blocks.DIAMOND_BLOCK),
     OBSIDIAN(Blocks.OBSIDIAN),
     QUARTZ(Blocks.QUARTZ_BLOCK),
-    PRIZMARINE(Blocks.PRISMARINE),
-    ICE(Blocks.ICE);
+    PRIZMARINE(Blocks.PRISMARINE_BRICKS),
+    ICE(Blocks.PACKED_ICE);
 
     public static final Codec<EnumGraveMaterial> CODEC = StringRepresentable.fromEnum(EnumGraveMaterial::values);
 
