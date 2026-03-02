@@ -18,7 +18,7 @@ public enum EnumGraveMaterial implements StringRepresentable {
 
     SANDSTONE(Blocks.SANDSTONE),
     STONE(Blocks.STONE),
-    DIORITE(Blocks.STONE),
+    DIORITE(Blocks.DIORITE),
     GRANITE(Blocks.GRANITE),
     MOSSY(Blocks.MOSSY_COBBLESTONE),
     GOLD(Blocks.GOLD_BLOCK),
