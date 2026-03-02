@@ -18,7 +18,10 @@ public enum EnumGraveType implements IEnumGraveType, StringRepresentable {
     CROSS,
     OBELISK,
     CELTIC_CROSS,
-    PET_GRAVE_STONE,
+    DOG_GRAVE_STONE,
+    CAT_GRAVE_STONE,
+    HORSE_GRAVE_STONE,
+    PET_GRAVE_STONE,//TODO remove later
     VILLAGER_GRAVE_STONE,
     SWORD;
 
