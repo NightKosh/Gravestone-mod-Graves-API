@@ -21,7 +21,7 @@ public enum EnumGraveType implements IEnumGraveType, StringRepresentable {
     DOG_GRAVE_STONE,
     CAT_GRAVE_STONE,
     HORSE_GRAVE_STONE,
-    PET_GRAVE_STONE,//TODO remove later
+    PET_GRAVE_STONE,
     VILLAGER_GRAVE_STONE,
     SWORD;
 
