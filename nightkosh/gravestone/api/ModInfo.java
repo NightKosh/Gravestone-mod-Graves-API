@@ -9,6 +9,6 @@ package nightkosh.gravestone.api;
 public class ModInfo {
 
     public static final String ID = "gravestone";
-    public static final String API_VERSION = "1.3.0";
+    public static final String API_VERSION = "1.4.0";
 
 }
