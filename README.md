@@ -5,7 +5,6 @@ Using this API you can:
 - place additional items in grave on mob death(from your custom slots or any another source)
 - prevent some items to be placed in grave
 - generate grave on your own mob death
-- allows to use your swords as gravestones
 - allows to change position of grave on death
 
 

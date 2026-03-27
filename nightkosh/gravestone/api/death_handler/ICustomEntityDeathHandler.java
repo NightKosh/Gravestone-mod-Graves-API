@@ -33,14 +33,6 @@ public interface ICustomEntityDeathHandler {
     List<ItemStack> getItems();
 
     /**
-     * Sword which will be used as a gravestone
-     * do not forget to remove it from items list
-     */
-    default ItemStack getSword() {
-        return null;
-    }
-
-    /**
      * Amount of lived days
      * you can calculate it as "(int) (entity.worldObj.getWorldTime() - spawnTime) / 24000"
      */

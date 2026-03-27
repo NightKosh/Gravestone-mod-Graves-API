@@ -21,8 +21,7 @@ public enum EnumGraveType implements IEnumGraveType, StringRepresentable {
     DOG_GRAVE_STONE,
     CAT_GRAVE_STONE,
     HORSE_GRAVE_STONE,
-    VILLAGER_GRAVE_STONE,
-    SWORD;
+    VILLAGER_GRAVE_STONE;
 
     public static final Codec<EnumGraveType> CODEC = StringRepresentable.fromEnum(EnumGraveType::values);
 

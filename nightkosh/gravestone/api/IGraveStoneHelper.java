@@ -1,6 +1,5 @@
 package nightkosh.gravestone.api;
 
-import net.minecraft.world.item.Item;
 import nightkosh.gravestone.api.grave.EnumGraveMaterial;
 
 /**
@@ -10,11 +9,6 @@ import nightkosh.gravestone.api.grave.EnumGraveMaterial;
  * @license Lesser GNU Public License v3 (http://www.gnu.org/licenses/lgpl.html)
  */
 public interface IGraveStoneHelper {
-
-    /**
-     * Allow graves to use any your sword as a gravestone
-     */
-    void addSwordToSwordsList(Item sword);
 
     EnumGraveMaterial getGraveMaterialByLevel(int level);
 
