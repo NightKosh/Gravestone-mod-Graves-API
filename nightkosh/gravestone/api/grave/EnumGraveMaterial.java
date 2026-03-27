@@ -17,11 +17,16 @@ import java.util.Locale;
 public enum EnumGraveMaterial implements StringRepresentable {
 
     SANDSTONE(Blocks.SANDSTONE),
+    REDSANDSTONE(Blocks.RED_SANDSTONE),
     STONE(Blocks.STONE),
     DIORITE(Blocks.DIORITE),
     GRANITE(Blocks.GRANITE),
     MOSSY(Blocks.MOSSY_COBBLESTONE),
+    IRON(Blocks.IRON_BLOCK),
     GOLD(Blocks.GOLD_BLOCK),
+    REDSTONE(Blocks.REDSTONE_BLOCK),
+    LAPIS(Blocks.LAPIS_BLOCK),
+    EMERALD(Blocks.EMERALD_BLOCK),
     DIAMOND(Blocks.DIAMOND_BLOCK),
     OBSIDIAN(Blocks.OBSIDIAN),
     QUARTZ(Blocks.QUARTZ_BLOCK),
